@@ -1,0 +1,81 @@
+.price {
+    margin-top: 3rem;
+    width: 30rem;
+    
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        grid-column: 1 / 3;
+        justify-self: center;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    &--old {
+        background-color: $color-secondary;
+        height: 10rem;
+        border-radius: .5rem;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    &--new {
+        background-color: $color-primary;
+        height: 10rem;
+        border-radius: .5rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__input {
+        align-self: center;
+        height: 3rem;
+        width: 80%;
+        justify-self: center;
+        margin-bottom: 1rem;
+    }
+
+    &__label {
+        justify-self: center;
+        align-self: end;
+        font-size: 1.5rem;
+    }
+}
+
+.password {
+    height: 3rem;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: gainsboro;
+    border: none;
+    text-decoration: none;
+    border-radius: .3rem;
+}
+
+.update {
+    background-color: #E32E34;
+    width: 10rem;
+    height: 3rem;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+
+    &:hover {
+        background-color: #EC4653;
+    }
+
+}
